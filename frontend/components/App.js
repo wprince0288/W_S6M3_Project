@@ -31,9 +31,15 @@ function App() {
 
   if (!apod) return 'Fetching Photo of the Day...'
   return (
-    <p>
-      {apod.explanation}
-    </p>
+    <section>
+      <div className='card'>
+        <h2>{apod.title}</h2>
+        <p>{apod.explanation}</p>
+        <figure>
+          <img src={apod.url}/>
+        </figure>
+      </div>
+    </section>
   )
 }
 
