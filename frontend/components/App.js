@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Card from './Card'
 
 const URL = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'
 
@@ -32,13 +33,12 @@ function App() {
   if (!apod) return 'Fetching Photo of the Day...'
   return (
     <section>
-      <div className='card'>
-        <h2>{apod.title}</h2>
-        <p>{apod.explanation}</p>
-        <figure>
-          <img src={apod.url}/>
-        </figure>
-      </div>
+      <Card
+        title={apod.title}
+        text={apod.explanation}
+        imageURL={apod.url}
+        date={apod.date}
+      />
     </section>
   )
 }
