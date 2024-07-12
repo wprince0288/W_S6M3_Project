@@ -7,7 +7,6 @@ body {
   font-family: 'Titillium Web', sans-serif;
   display: flex;
   flex-direction: column;
-  
 }
 
 #root {
@@ -16,46 +15,26 @@ body {
   align-items: center;
 }
 
-h1 {
-  color: white;
-  background: blue;
-  border-radius:1cap;
-  font-size: 3rem;
+h1,h2 {
+  color: #93005a;
 }
 
-h2 {
-  color: blueviolet;
-  text-align: center;
-  font-size: 2rem;
-
-}
-
-p {
-  text-align: center;
-  padding-top: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 #root {
   width: 100%;
   overflow-y: auto;
-  border-top: .5rem ridge cyan;
-  border-bottom: .5rem ridge cyan;
+  padding-top: 1px solid grey;
+  padding-bottom: 1px solid grey;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-header {
+header, footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding: 1rem;
 }
 
-figure {
-  text-align: center;
-  font-size: 25px;
+section {
+  padding: 1rem;
 }
